@@ -78,7 +78,9 @@ namespace mc::workflow{
             }
         };
     private:
+        //条件节点列表
         std::vector<ConditionNext<OutData>> conditionNexts;
+        //普通节点列表
         std::vector<IWorkNode<OutData>*> nexts;
     };
 }
